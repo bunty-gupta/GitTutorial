@@ -35,6 +35,12 @@ public class EmployeeController
         return "helloworld";
     }
     
+    @GetMapping(path="/threshold", produces = "application/json")
+    public String getthreshold() 
+    {
+        return "threshold";
+    }
+    
     @GetMapping(path="/start", produces = "application/json")
     public String getstart() 
     {
