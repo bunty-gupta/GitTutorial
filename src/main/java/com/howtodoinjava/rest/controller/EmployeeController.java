@@ -29,16 +29,27 @@ public class EmployeeController
         return employeeDao.getAllEmployees();
     }
     
+    
+    
+  
+    
+    
     @GetMapping(path="/helloworld", produces = "application/json")
     public String gethelloworld() 
     {
-        return "helloworld";
+        return "biraj";
     }
     
     @GetMapping(path="/start", produces = "application/json")
     public String getstart() 
     {
         return "start";
+    }
+    
+    @GetMapping(path="/stop", produces = "application/json")
+    public String getstop() 
+    {
+        return "stop";
     }
     
     @PostMapping(path= "/", consumes = "application/json", produces = "application/json")
